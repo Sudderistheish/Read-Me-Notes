@@ -1,0 +1,42 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4132023</title>
+</head>
+<body>
+  <header>
+    <h1>Andrea Lab</h1>
+  </header>
+   
+<main>
+  <p>1. What is your name?</p>
+  <p>2. What is your favorite food</p>
+  <p>3. What is your favorite color</p>
+</main>
+
+<footer>
+  <p>Andreas Work</p>
+</footer>
+
+
+
+
+</body>
+<script>
+    let yourName = prompt("What is your name?");
+    console.log("Ribs")
+    console.log(yourName)
+    alert("Hello" + yourName)
+    let yourFavoriteFood = prompt("What is your favorite food?");
+    alert("Prime rib" + yourFavoriteFood)
+    let color = prompt("What is your favorite color?");""
+    alert ("Purple" + color)
+
+    alert( "Your name is " + yourName + "\n"
+    + "Your favorite food is " +  "\n"
+    + "Your favorite color is " + color ) 
+  </script>
+</html>
