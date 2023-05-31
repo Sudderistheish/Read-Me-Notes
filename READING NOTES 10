@@ -1,0 +1,26 @@
+Reading
+What Went Wrong? Troubleshooting JavaScriptLinks to an external site..
+
+Name some key differences between a Syntax Error and a Logic Error.
+Syntax errors: These are spelling errors in your code that actually cause the program not to run at all, or stop working part way through — you will usually be provided with some error messages too. These are usually okay to fix, as long as you are familiar with the right tools and know what the error messages mean!
+Logic errors: These are errors where the syntax is actually correct but the code is not what you intended it to be, meaning that program runs successfully but gives incorrect results. These are often harder to fix than syntax errors, as there usually isn't an error message to direct you to the source of the error.
+List a few types of errors that you have encountered in past lab assignments and explain how you were able to correct them.
+ 
+
+TypeError: "x" is not a function, Undefined, Sytax Error
+ 
+
+How will this topic continue to influence your long term goals?
+
+This topic will help me understand more how to fix and debug my code. To make my work more effective and effiecient.
+
+The JavaScript DebuggerLinks to an external site..
+
+How would you describe the JavaScript Debugger tool and how it works to someone just starting out in software development?I think this tool will be very helpful with determining where my code went wrong
+Define what a breakpoint is. Breaking point is the area you code becomes broken and tells you where you should began to look for the error in your code.
+What is the call stack? Call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functionsLinks to an external site. — what function is currently being run and what functions are called from within that function
+
+Bookmark and Review
+Debugging HTMLLinks to an external site.
+
+Debugging CSSLinks to an external site.
