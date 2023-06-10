@@ -1,0 +1,9 @@
+Reading Notes
+
+Local Storage and How To Use It On Websites
+1.	Why would a developer use local storage for a web application?
+Local storage allows developers to store and retrieve data in the browser. The stored in local storage will not expire. That means data will persist even if the tab or the browser window is closed.  example of this code. localStorage.setItem('favoriteflavor','vanilla');
+2.	What information should not be stored in local storage?
+Personally Identifiable Information authentication tokens, user locations and API keys should never be stored in the local storage.
+3.	Local storage can store what type of data? How would you convert it to that type before storing?
+4.	Local storage can only store strings. If wanted to store a object you would need to convert it to a string which is done by using the JSON.stringfy()
