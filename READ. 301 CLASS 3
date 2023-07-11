@@ -1,0 +1,21 @@
+
+Reading:
+1.	What does .map() return? The .map() method in JavaScript returns a new array by applying a given function to each element of the original array.
+2.	If I want to loop through an array and display each value in JSX, how do I do that in React? React, you can use the .map() method to loop through an array and generate JSX elements for each value.
+3.	Each list item needs a unique ____. Each list item in React needs a unique "key" prop. The key helps React identify each item in the list and optimize the rendering process.
+4.	What is the purpose of a key? The purpose of a key in React is to provide a unique identifier for each element in a list. Keys help React efficiently update and re-render lists by identifying which items have changed, been added, or been removed.
+
+The spread operator in React is a JavaScript syntax feature that allows you to expand iterable objects (like arrays or strings) into individual elements. It provides a concise way to manipulate arrays and objects by creating new copies or combining existing ones.
+Here are four things that the spread operator can do:
+1.	Array Expansion: It can expand an array into individual elements, making it useful for creating copies or combining arrays.
+2.	Object Expansion: It can expand an object's properties into a new object, allowing you to create copies or merge objects.
+3.	Function Arguments: It can spread out an array as individual arguments when calling a function.
+4.	String Expansion: It can convert a string into an array of individual characters.
+
+1.	In the video, what is the first step that the developer does to pass functions between components? The first step the developer takes to pass functions between components is to define the function in the parent component.
+2.	In your own words, what does the increment function do? The increment function, in the context of the video, increases a counter value by a specified amount. It updates the state of the parent component and triggers a re-render, allowing the updated counter value to propagate to child components.
+3.	How can you pass a method from a parent component into a child component? To pass a method from a parent component to a child component, you can pass it as a prop when rendering the child component. The child component can then access the method through its props and invoke it as needed.
+4.	How does the child component invoke a method that was passed to it from a parent component? The child component can invoke a method passed from a parent component by using the props object. It calls the method like a regular function, using props.methodName().
+
+
+
