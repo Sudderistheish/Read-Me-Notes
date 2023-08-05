@@ -1,0 +1,68 @@
+READ CLASS 10
+
+Understanding the JavaScript Call Stack:
+
+What is a 'call'?
+In programming, a 'call' refers to the invocation of a function. When a function is called, its code is executed, and the program jumps to that function's code block.
+
+How many 'calls' can happen at once?
+In JavaScript, the call stack follows a Last-In-First-Out (LIFO) order, which means only one function is executed at a time, and when a function is called inside another function, it adds a new frame to the top of the call stack.
+
+What does LIFO mean?
+LIFO stands for "Last-In-First-Out." In the context of the call stack, it means that the last function added to the stack will be the first one to be removed and executed.
+
+Draw an example of a call stack and the functions that would need to be invoked to generate that call stack.
+Suppose we have the following functions:
+
+javascript
+Copy code
+function firstFunction() {
+    console.log("This is the first function");
+    secondFunction();
+}
+
+function secondFunction() {
+    console.log("This is the second function");
+    thirdFunction();
+}
+
+function thirdFunction() {
+    console.log("This is the third function");
+}
+
+firstFunction();
+The call stack would look like this during the execution:
+
+lua
+Copy code
+|----------------|
+| thirdFunction  | <- Top of the stack (currently executing)
+|----------------|
+| secondFunction |
+|----------------|
+| firstFunction  |
+|----------------|
+What causes a Stack Overflow?
+A stack overflow occurs when the call stack exceeds its maximum size. This typically happens when there is an excessive number of function calls, either due to recursive function calls without a proper base case or an infinite loop.
+JavaScript Error Messages:
+
+What is a 'reference error'?
+A 'reference error' occurs when you try to access a variable or function that does not exist in the current scope or has not been declared.
+
+What is a 'syntax error'?
+
+A 'syntax error' occurs when the code violates the rules of the programming language's syntax. It means the code is not written correctly and cannot be interpreted by the language.
+
+What is a 'range error'?
+A 'range error' occurs when a numeric value is not within the range of allowed values. For example, trying to access an array element with an index that is out of the array's bounds can cause a range error.
+
+What is a 'type error'?
+A 'type error' occurs when an operation is performed on a value of the wrong data type. For example, trying to call a function on a variable that is not a function or performing arithmetic on non-numeric values can lead to a type error.
+
+What is a breakpoint?
+A 'breakpoint' is a specific point in the code where the debugger pauses the execution of the program. It allows developers to inspect the state of the program at that particular point and analyze the variables and flow of execution.
+
+What does the word 'debugger' do in your code?
+The word 'debugger' in your code is a keyword that acts as a breakpoint. When the JavaScript engine encounters the 'debugger' keyword during execution, it will pause the program, and if a debugger is available (like in browser Developer Tools), it will allow developers to step through the code and inspect variables and expressions to identify and fix issues in the code.
+
+
