@@ -1,0 +1,45 @@
+SQL	NoSQL
+Relational Structure	Schema-less Structure
+Tabular Data	Flexible Data Models
+ACID Transactions	Eventual Consistency
+Predominantly SQL	Various Query Languages
+Vertical Scaling	Horizontal Scaling
+
+1.	What kind of data is a good fit for an SQL database?
+A good fit for an SQL database is structured data with well-defined relationships. It's suitable for scenarios where data integrity, consistency, and complex querying are important. For example, an e-commerce website's inventory system could use an SQL database to manage products, categories, and orders. Each product has attributes like name, price, and description, while orders link customers, products, and quantities in a structured manner.
+2.	Give a real world example.
+A NoSQL database is well-suited for unstructured or semi-structured data and scenarios that require high scalability and flexibility. Social media platforms often use NoSQL databases to handle user-generated content. For instance, a social media platform could use a NoSQL database to store user posts, comments, and likes. Each post might have variable fields like text, images, videos, and tags, and a NoSQL database can handle these diverse data types more flexibly.
+3.	What kind of data is a good fit a NoSQL database?
+NoSQL databases, especially document-based databases, are often better for hierarchical data storage. Document databases allow nested structures, making them suitable for scenarios where data has parent-child relationships. For instance, a content management system could use a document-based NoSQL database to store articles and their associated comments in a hierarchical manner, with each article containing an array of comments.
+4.	Give a real world example.
+Example: Apache Cassandra is a NoSQL database designed for handling large amounts of data across distributed clusters. It's used by companies like Netflix to manage user activity and provide personalized recommendations.
+5.	Which type of database is best for hierarchical data storage?
+NoSQL databases, especially document-based databases, are often better for hierarchical data storage. Document databases allow nested structures, making them suitable for scenarios where data has parent-child relationships. For instance, a content management system could use a document-based NoSQL database to store articles and their associated comments in a hierarchical manner, with each article containing an array of comments.
+
+
+6.	Which type of database is best for scalability?
+NoSQL databases are generally better suited for high scalability needs. They come in various types (key-value, document, column-family, and graph databases), each designed to handle specific scalability requirements. Horizontal scaling, where you add more servers or nodes to distribute the load, is easier to achieve with NoSQL databases. This makes them ideal for applications with rapidly growing user bases or data volumes, such as real-time analytics platforms or IoT sensor data management.
+
+
+1.	What does SQL stand for?
+Structured Query Language
+2.	What is a relational database? 
+is a type of database that organizes and stores data in a structured way, using tables with rows and columns.
+3.	What type of structure does a relational database work with?
+A relational database works with a tabular structure, where data is stored in tables, and relationships between different tables are established using keys, typically primary and foreign keys.
+
+
+4.	What is a ‘schema’?
+A schema in the context of a relational database is a blueprint that defines the structure, organization, and relationships of the data. It includes information about the tables, columns, data types, constraints, and relationships within the database.
+5.	What is a NoSQL database?
+A NoSQL database (which stands for "not only SQL") is a type of database management system that is designed to handle unstructured, semi-structured, or highly variable data. Unlike relational databases, which follow a tabular structure, NoSQL databases use various data models such as key-value, document, column-family, or graph to store and manage data.
+6.	How does it work?
+The workings of a NoSQL database depend on its specific data model. For example, in a MongoDB (a popular NoSQL database) document model, data is stored as documents, which are akin to JSON-like structures. These documents can be nested, and the database provides flexible querying capabilities.
+7.	What is inside of a MongoDB database?
+Inside a MongoDB database, data is stored in collections, which are analogous to tables in a relational database. Each collection contains multiple documents, and each document holds the data in a semi-structured format, typically using BSON (Binary JSON) encoding.
+8.	Which is more flexible - SQL or MongoDB? and why.
+databases offer strong data consistency, structured schemas, and support for complex queries through SQL language. However, they can be less flexible when dealing with changing data structures or unstructured data.
+On the other hand, MongoDB provides greater flexibility for handling dynamic, evolving data structures, making it suitable for scenarios where data models change frequently or where unstructured data is prevalent. However, this flexibility can lead to challenges in maintaining data integrity and enforcing consistency.
+
+9.	What is the disadvantage of a NoSQL database?
+One disadvantage of a NoSQL database is the potential trade-off between flexibility and data consistency. NoSQL databases often prioritize flexibility and scalability over strong consistency, which can lead to eventual consistency and potential data integrity issues in distributed systems. Additionally, as NoSQL databases don't adhere to a standardized query language like SQL, developers might need to learn and adapt to specific query languages or APIs for each NoSQL solution they use
