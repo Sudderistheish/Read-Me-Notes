@@ -1,0 +1,23 @@
+READ 12
+
+Reading: Status Codes Based On REST Methods
+In RESTful APIs, status codes are used to indicate the outcome of a client's request. Each group of status codes has a specific meaning:
+•	100's: These are informational status codes. They indicate that the initial part of the request has been received and the server is still processing it.
+•	200's: These are success status codes. They indicate that the client's request was successfully received, understood, and accepted.
+•	300's: These are redirection status codes. They indicate that further action needs to be taken by the client to complete the request, usually involving redirection to a different location.
+•	400's: These are client error status codes. They indicate that there was an issue with the client's request, such as bad syntax or authentication failure.
+•	500's: These are server error status codes. They indicate that the server encountered an error while processing the request.
+•	Status Code 202: This status code indicates that the request has been accepted for processing, but the processing has not been completed yet. It's often used for asynchronous operations where the server needs more time to complete the request.
+•	Status Code 308: This status code indicates that the resource the client was trying to access has permanently moved to a different location.
+•	Status Code for Update Without Data: If an update is made successfully but does not return data to the client, the appropriate status code could be 204 No Content. It indicates that the request was successful, but there is no new data to send back.
+•	Status Code for Resource No Longer Exists: If a resource used to exist but no longer does, the appropriate status code would be 410 Gone. This indicates that the requested resource is gone and will not be available again.
+•	Forbidden Status Code (403): This status code indicates that the server understood the request, but it refuses to authorize it. Essentially, the client doesn't have the necessary permissions to access the requested resource.
+Videos: Build A REST API With Node.js, Express, & MongoDB
+•	Why Move MongoDB Database String to .env: Storing sensitive information like database credentials in code is not secure. By moving the MongoDB database string to a .env file, you keep such sensitive information separate and out of version control, enhancing security.
+•	What is Middleware: Middleware in Express is a set of functions that are executed in the middle of the request-response cycle. They can perform tasks like authentication, logging, data validation, etc.
+•	app.use(express.json()): This middleware allows Express to parse JSON data from incoming requests. It populates the req.body object with the JSON data so that it can be easily accessed by route handlers.
+•	/:id in Route: This is a URL parameter in Express routes. It's a placeholder for a dynamic value that will be part of the URL. For example, in /users/:id, :id can be replaced with an actual user ID in the request.
+•	Difference Between PUT and PATCH: Both are used for updating resources. PUT typically updates the entire resource, while PATCH is used to apply partial updates. PUT replaces the entire resource, whereas PATCH applies changes to specific fields.
+•	Default Value in a Schema: In a database schema, you can set default values for certain fields. If a record is created without explicitly providing a value for that field, the default value will be used.
+•	500 Error Status Code: This status code (500 Internal Server Error) indicates that the server encountered an error that prevented it from fulfilling the request. It's a generic error message.
+•	Difference Between Status 200 and Status 201: A status code 200 (OK) indicates a successful request. A status code 201 (Created) is similar but specifically indicates that a new resource has been successfully created as a result of the request.
