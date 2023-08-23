@@ -1,0 +1,23 @@
+HTTP Method for Update: The HTTP method typically used to update a record through an API is the PUT method. Alternatively, you might also use the PATCH method for partial updates.
+
+REST Methods Requiring ID Parameter: In a RESTful API, the methods that require an ID parameter are usually the ones that operate on specific resources. These methods are GET (retrieve), PUT (update), PATCH (partially update), and DELETE (delete). The ID parameter specifies the unique identifier of the resource being manipulated.
+
+Videos:
+
+Speed Coding: Building a CRUD API: This video showcases a Twitch streamer coding an Express API in 20 minutes. It likely demonstrates how to quickly create an API that performs CRUD (Create, Read, Update, Delete) operations using the Express.js framework.
+
+Relationship between REST and CRUD:
+
+REST (Representational State Transfer) is an architectural style that defines a set of constraints for creating web services. CRUD (Create, Read, Update, Delete), on the other hand, is a set of operations that represent the fundamental actions you can perform on data. RESTful APIs often implement CRUD operations to interact with resources. In a sense, REST can be seen as an architectural guideline for designing APIs that encompass CRUD functionality, among other principles.
+
+Process of Creating a RESTful API in 5 Steps:
+
+Design Resource URIs: Define the structure of resource URIs (Uniform Resource Identifiers) that will represent the various entities or objects in your system. These URIs should follow a hierarchical pattern that reflects the relationships between resources.
+
+Choose HTTP Methods: Assign appropriate HTTP methods (GET, POST, PUT, PATCH, DELETE) to each URI to define the actions that can be performed on resources. Use GET for reading, POST for creating, PUT/PATCH for updating, and DELETE for deleting.
+
+Create Data Models: Design the data models or structures that represent the resources. These models should include the attributes and properties of the resources, as well as any relationships between them.
+
+Implement Controller Logic: Develop the logic for each API endpoint's controller. This involves handling incoming HTTP requests, interacting with the data models, performing CRUD operations, and returning appropriate HTTP responses.
+
+Handle Responses and Errors: Define the format of API responses, including status codes and data formats (often JSON). Implement error handling mechanisms to provide meaningful error messages and appropriate status codes in case of failures.
